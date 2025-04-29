@@ -1,4 +1,8 @@
-# freewave
+freewave-portfolio/
+│
+├── index.html
+├── style.css
+└── script.js
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -60,3 +64,67 @@
   <script src="script.js"></script>
 </body>
 </html>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #fff;
+  color: #333;
+}
+
+header {
+  background: #0d0d0d;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  background: url('https://source.unsplash.com/1600x400/?band,concert') no-repeat center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form textarea {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+footer {
+  background: #f1f1f1;
+  text-align: center;
+  padding: 20px;
+}
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+  e.preventDefault();
+  alert("Thanks for reaching out! We'll get back to you soon.");
+});
+
